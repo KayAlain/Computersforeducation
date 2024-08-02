@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Request Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/apply.css">
+    <script src="https://kit.fontawesome.com/0aed0607f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img style="max-width: 250px;" src="./assets/Logo/CFS_NB_3inch.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-4 py-2">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/about.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./about.html">ABOUT US</a></li>
+                    <li><a class="dropdown-item" href="#">COMPUTERS FOR SCHOOL PLUS</a></li>
+                    <li><a class="dropdown-item" href="./Careers.html">CAREERS</a></li>
+                    <li><a class="dropdown-item" href="./announcements.html">ANNOUNCEMENTS</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="./faq.html">FAQ</a></li>
+                    <li><a class="dropdown-item" href="./privacy.html">PRIVACY POLICY</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/apply.html">Apply Now</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/donate.html">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact Us</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  
+  
+  <section class="pt-5 mt-4">
+    <div style="max-width: 650px;" class="container mt-5">
+      <h2 class="mt-5 mb-4 text-center">Device Request Form</h2>
+      <form id="device-request-form" action="https://api.web3forms.com/submit" method="POST" class="mt-4">
+        <input type="hidden" name="access_key" value="bcca2347-f237-4871-9dcc-297157cbf68b">
+        <!-- <input type="hidden" name="redirect" value="https://yoursite.com/thank-you.html"> -->
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" class="form-control" id="first-name" name="first_name" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" class="form-control" id="last-name" name="last_name" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" name="address" required>
+        </div>
+        <div class="form-group">
+            <label for="city">City/Town</label>
+            <input type="text" class="form-control" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="postal-code">Postal Code</label>
+            <input type="text" class="form-control" id="postal-code" name="postal_code" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+
+        <h3 class="mt-4 text-center">School/Institution Details</h3>
+        <div class="form-group">
+            <label for="school">Name of School/Institution</label>
+            <input type="text" class="form-control" id="school" name="school" required>
+        </div>
+        <div class="form-group">
+            <label for="student-id">Student ID</label>
+            <input type="text" class="form-control" id="student-id" name="student_id">
+        </div>
+
+        <h3 class="mt-4 text-center">Device Request Details</h3>
+        <div class="form-group">
+            <label for="device-type">Type of Device</label>
+            <select class="form-control" id="device-type" name="device_type" required>
+                <option value="desktop">Desktop</option>
+                <option value="laptop">Laptop</option>
+                <option value="networking">Networking Equipment</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="os-preference">Operating System</label>
+            <select class="form-control" id="os-preference" name="os_preference" required>
+                <option value="none">No OS</option>
+                <option value="windows">Windows 10</option>
+                <option value="linux">Linux</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="software-preference">Office Software</label>
+            <select class="form-control" id="software-preference" name="software_preference">
+                <option value="none">None</option>
+                <option value="libreoffice">LibreOffice</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">Comments or Special Requests</label>
+            <textarea class="form-control" id="comments" name="comments" rows="4"></textarea>
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+            <label class="form-check-label" for="terms">I agree to the terms and conditions (e.g., not selling the device for profit, responsible recycling)</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  </section>
+   
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" ></script>
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"
+  ></script>
+</body>
+</html>
